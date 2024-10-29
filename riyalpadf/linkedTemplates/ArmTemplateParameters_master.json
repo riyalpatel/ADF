@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "riyalpadf"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage3_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage4_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage5_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "riyaldbsrvr.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "riyaldb"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "radmin"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "riyaldbsrvr.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "riyaldb"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "radmin"
+		},
+		"trigger2_properties_typeProperties_scope": {
+			"value": "/subscriptions/8d78165e-6209-4429-a6e1-f34a78822af0/resourceGroups/Test-0/providers/Microsoft.Storage/storageAccounts/medalliondatalake"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
