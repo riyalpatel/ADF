@@ -1,0 +1,9 @@
+{
+	"name": "riyalpadf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5629fac1-f94b-4306-8a8c-c7f0cf109c70",
+		"tenantId": "4ddd393a-e98a-4404-841f-c4becdd925a5"
+	}
+}

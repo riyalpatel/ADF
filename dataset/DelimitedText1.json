@@ -1,0 +1,125 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Spotify Most Streamed Songs.csv",
+				"container": "raw-data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "track_name",
+				"type": "String"
+			},
+			{
+				"name": "artist(s)_name",
+				"type": "String"
+			},
+			{
+				"name": "artist_count",
+				"type": "String"
+			},
+			{
+				"name": "released_year",
+				"type": "String"
+			},
+			{
+				"name": "released_month",
+				"type": "String"
+			},
+			{
+				"name": "released_day",
+				"type": "String"
+			},
+			{
+				"name": "in_spotify_playlists",
+				"type": "String"
+			},
+			{
+				"name": "in_spotify_charts",
+				"type": "String"
+			},
+			{
+				"name": "streams",
+				"type": "String"
+			},
+			{
+				"name": "in_apple_playlists",
+				"type": "String"
+			},
+			{
+				"name": "in_apple_charts",
+				"type": "String"
+			},
+			{
+				"name": "in_deezer_playlists",
+				"type": "String"
+			},
+			{
+				"name": "in_deezer_charts",
+				"type": "String"
+			},
+			{
+				"name": "in_shazam_charts",
+				"type": "String"
+			},
+			{
+				"name": "bpm",
+				"type": "String"
+			},
+			{
+				"name": "key",
+				"type": "String"
+			},
+			{
+				"name": "mode",
+				"type": "String"
+			},
+			{
+				"name": "danceability_%",
+				"type": "String"
+			},
+			{
+				"name": "valence_%",
+				"type": "String"
+			},
+			{
+				"name": "energy_%",
+				"type": "String"
+			},
+			{
+				"name": "acousticness_%",
+				"type": "String"
+			},
+			{
+				"name": "instrumentalness_%",
+				"type": "String"
+			},
+			{
+				"name": "liveness_%",
+				"type": "String"
+			},
+			{
+				"name": "speechiness_%",
+				"type": "String"
+			},
+			{
+				"name": "cover_url",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

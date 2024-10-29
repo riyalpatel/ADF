@@ -1,0 +1,145 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "track_name",
+				"type": "varchar"
+			},
+			{
+				"name": "artists_name",
+				"type": "varchar"
+			},
+			{
+				"name": "artist_count",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "released_year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "released_month",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "released_day",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "in_spotify_playlists",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "in_spotify_charts",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "streams",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "in_apple_playlists",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "in_apple_charts",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "in_deezer_playlists",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "in_deezer_charts",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "in_shazam_charts",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "bpm",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "track_key",
+				"type": "varchar"
+			},
+			{
+				"name": "track_mode",
+				"type": "varchar"
+			},
+			{
+				"name": "danceability_percent",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 2
+			},
+			{
+				"name": "valence_percent",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 2
+			},
+			{
+				"name": "energy_percent",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 2
+			},
+			{
+				"name": "acousticness_percent",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 2
+			},
+			{
+				"name": "instrumentalness_percent",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 2
+			},
+			{
+				"name": "liveness_percent",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 2
+			},
+			{
+				"name": "speechiness_percent",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 2
+			},
+			{
+				"name": "cover_url",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "music_tracks"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

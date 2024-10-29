@@ -1,0 +1,24 @@
+{
+	"name": "trigger2",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline3",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/raw-data/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/8d78165e-6209-4429-a6e1-f34a78822af0/resourceGroups/Test-0/providers/Microsoft.Storage/storageAccounts/medalliondatalake",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
