@@ -15,17 +15,6 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"source": {
-						"type": "DelimitedTextSource",
-						"storeSettings": {
-							"type": "AzureBlobStorageReadSettings",
-							"recursive": true,
-							"enablePartitionDiscovery": false
-						},
-						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
-						}
-					},
 					"sink": {
 						"type": "AzureSqlSink",
 						"writeBehavior": "insert",
@@ -40,65 +29,46 @@
 							{
 								"source": {
 									"name": "track_name",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								},
 								"sink": {
 									"name": "track_name",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "artists_name",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								},
 								"sink": {
 									"name": "artists_name",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "streams",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								},
 								"sink": {
 									"name": "streams",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "cover_url",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								},
 								"sink": {
 									"name": "cover_url",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								}
 							}
-						],
-						"typeConversion": true,
-						"typeConversionSettings": {
-							"allowDataTruncation": true,
-							"treatBooleanAsNumber": false
-						}
+						]
 					}
 				},
-				"inputs": [
-					{
-						"referenceName": "DelimitedText3",
-						"type": "DatasetReference"
-					}
-				],
 				"outputs": [
 					{
 						"referenceName": "AzureSqlTable1",
