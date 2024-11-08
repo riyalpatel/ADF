@@ -1,0 +1,23 @@
+{
+	"name": "AzureSqlDatabase3",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "riyaldbsrvr.database.windows.net",
+			"database": "riyaldb",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "radmin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "DBPAss"
+			}
+		}
+	}
+}
