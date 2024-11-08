@@ -46,8 +46,8 @@
 						"referenceName": "AzureSqlTable3",
 						"type": "DatasetReference",
 						"parameters": {
-							"DatabaseName": {
-								"value": "@pipeline().parameters.DatabaseName",
+							"TableName": {
+								"value": "@pipeline().parameters.TableName",
 								"type": "Expression"
 							}
 						}
@@ -56,15 +56,18 @@
 				"outputs": [
 					{
 						"referenceName": "DelimitedText5",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"TableName": {
+								"value": "@pipeline().parameters.TableName",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
 		],
 		"parameters": {
-			"DatabaseName": {
-				"type": "string"
-			},
 			"TableName": {
 				"type": "string"
 			}
